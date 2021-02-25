@@ -10,3 +10,23 @@ div.card-img-top{
   margin-left: auto;
   margin-right: auto;
 }
+.photo-message{
+  text-align: center;
+}
+.submit-button{
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+}
+.dropzone-content{
+  border: 1px dotted grey;
+  height: 50px;
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.mapped-row{
+  text-align: center;
+}

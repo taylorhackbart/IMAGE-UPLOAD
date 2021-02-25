@@ -57,7 +57,6 @@ function Photos() {
   }, []);
 
   const onSend = () => {
-    console.log(photos, photoArr);
     setPhotoArr({ ...photoArr, images: photos });
     setDone(true);
   };
@@ -65,14 +64,12 @@ function Photos() {
   const onSubmit = async () => {
     await API.saveExample(photoArr).then((res) => {
       setPhotoArr({ ...photoArr, images: photos });
-      console.log(res);
       const id = res.data._id
       history.push("/view/" + id);
     });
   };
 
   const moveImage = (dragIndex, hoverIndex) => {
-    console.log("click");
     const draggedImage = photos[dragIndex];
     setPhotos(
       update(photos, {
@@ -97,7 +94,7 @@ function Photos() {
         <>
           <main className="App">
             <h1 className="text-center">Drag and Drop </h1>
-
+            <h5 className="photo-message"> (Please only upload photos that you are okay with being published on this site)</h5>
             <Dropzone onDrop={onDrop} accept={"image/*"} />
             {photos && photos.length > 0 && (
               <h3 className="text-center">
@@ -113,8 +110,8 @@ function Photos() {
             </DndProvider>
             {done === false && (
               <>
-                <button onClick={onSend}> Save </button>
-                <button onClick={onSubmit} style={{ display: "none" }}>
+                <button className="submit-button" onClick={onSend}> Save </button>
+                <button className="submit-button"  onClick={onSubmit} style={{ display: "none" }}>
                   {" "}
                   Submit{" "}
                 </button>
@@ -122,11 +119,11 @@ function Photos() {
             )}
             {done === true && (
               <>
-                <button onClick={onSend} style={{ display: "none" }}>
+                <button className="submit-button"  onClick={onSend} style={{ display: "none" }}>
                   {" "}
                   Save{" "}
                 </button>
-                <button onClick={onSubmit}> Submit </button>
+                <button className="submit-button"  onClick={onSubmit}> Submit </button>
               </>
             )}
           </main>

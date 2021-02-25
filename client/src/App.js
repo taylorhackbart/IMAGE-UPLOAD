@@ -12,6 +12,7 @@ import HomePage from "./pages/Home/Home.js";
 import Photos from "./pages/Photos/Photos.js";
 import View from "./pages/Photos/View.js";
 import NoMatch from "./pages/NoMatch";
+import ViewAll from "./pages/ViewAll/viewall.js"
 
 const isTouchDevice = () => {
   if ("ontouchstart" in window) {
@@ -32,6 +33,7 @@ function App() {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/photos" component={Photos} />
                 <Route exact path={"/view/:id"} component={View} />
+                <Route exact path={"/viewall"} component={ViewAll} />
                 <Route path="*" component={NoMatch} />
               </Switch>
             </div>

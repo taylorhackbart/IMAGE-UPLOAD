@@ -9,7 +9,7 @@ function View() {
   const [photo, setPhoto] = useState({});
   const [loading, setLoading] = useState(true);
   const params = useParams();
- console.log(photo)
+
   useEffect(() => {
     loadPhotos();
   }, []);
@@ -18,7 +18,6 @@ function View() {
   const loadPhotos= async () => {
     await API.getExample(params.id)
       .then((resp) => {
-        console.log(resp)
         setPhoto(resp.data.images);
         setLoading(false);
       })
@@ -95,6 +94,9 @@ function View() {
             </div>
           </div>
         </div>
+          </div>
+          <div className="mapped-row">
+          {photo.length} photos in this collection
           </div>
         </div>
   );

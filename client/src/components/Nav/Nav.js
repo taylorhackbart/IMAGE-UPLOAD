@@ -17,6 +17,9 @@ function NavBar() {
           <a href="/photos">
           <button className="nav-button"> UPLOAD PHOTOS </button>
           </a>
+          <a href="/viewall">
+          <button className="nav-button"> VIEW UPLOADS </button>
+          </a>
         </div>
       </Navbar>
     </>
