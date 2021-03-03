@@ -26,7 +26,7 @@ Using a carasoul, it will allow the user to look through the photos and shows ho
 
 <img src="https://github.com/taylorhackbart/IMAGE-UPLOAD/blob/master/readmeimages/Screen%20Shot%202021-03-03%20at%2011.12.23%20AM.png" />
 
-Clicking "View Uploads" in the upper right hand corner of the screen, takes the user to a page that will display the first photo from every collection. By clicking on a photo, it will lead the user to see all photos that were uploaded in the collection:
+Clicking "View Uploads" in the upper right hand corner of the screen, takes the user to a page that will display the first photo from every collection. If a user submits an empty upload (no images) these will automatically be filtered out and will not appear on the page. By clicking on a photo, it will lead the user to see all photos that were uploaded in the collection:
 
 <img src="https://github.com/taylorhackbart/IMAGE-UPLOAD/blob/master/readmeimages/Screen%20Shot%202021-03-03%20at%2011.12.31%20AM.png" />
 
