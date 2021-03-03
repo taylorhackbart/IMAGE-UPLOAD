@@ -1,7 +1,7 @@
 # IMAGE UPLOAD TEMPLATE
 
 ## Description
-I have created a drag and drop image uploader that allows multiple image uploads from a desktop, tablet or mobile device. This allows a user to delete photos upon upload, as well as rearrange the order in which images will be displayed. The first image on the list will always be the image displayed on the "View All Uploads" page
+I have created a drag and drop image uploader that allows multiple image uploads from a desktop, tablet or mobile device. This allows a user to delete photos upon upload, as well as rearrange the order in which images will be displayed. The first image on the list will always be the image displayed on the "View Uploads" page. Feel free to try out my app <a href="https://image-upload-template.herokuapp.com/" > here </a> and please only upload photos that you are comfortable being displayed on a live site.
 
 ## Usage
 Below will show a basic walk through of the app:
