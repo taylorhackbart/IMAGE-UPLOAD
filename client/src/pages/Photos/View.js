@@ -3,7 +3,6 @@ import "./style.css";
 import API from "../../utils/API";
 import { useParams } from "react-router-dom";
 
-
 function View() {
   const [index, setIndex] = useState(0);
   const [photo, setPhoto] = useState({});
@@ -23,7 +22,7 @@ function View() {
       })
       .catch((err) => console.log(err));
   };
-
+//Carousel browser is linked to the index number of the image
   const checkNumber = (number) => {
     if (number > photo.length - 1) {
       return 0;

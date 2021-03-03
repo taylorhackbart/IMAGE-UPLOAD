@@ -2,9 +2,12 @@ import React from "react";
 import NavBar from "./components/Nav";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./app.css";
+//Image upload packages required
 import { DndProvider } from "react-dnd";
 import { DragDropContext } from "react-beautiful-dnd";
+//HTML5 backend for "on-click" events
 import { HTML5Backend } from "react-dnd-html5-backend";
+//Touch Backend for "on-touch" event for mobile and tablet uploads
 import { TouchBackend } from "react-dnd-touch-backend";
 
 //PUBLIC ROUTES
@@ -14,12 +17,14 @@ import View from "./pages/Photos/View.js";
 import NoMatch from "./pages/NoMatch";
 import ViewAll from "./pages/ViewAll/viewall.js"
 
+//Verifies if it is a touch device for accurate on-click or on-touch listening methods
 const isTouchDevice = () => {
   if ("ontouchstart" in window) {
     return true;
   }
   return false;
 };
+
 const backendForDND = isTouchDevice() ? TouchBackend : HTML5Backend;
 function App() {
   return (

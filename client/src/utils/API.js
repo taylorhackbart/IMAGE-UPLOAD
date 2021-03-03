@@ -5,7 +5,7 @@ export default {
   getExamples: function() {
     return axios.get("/api/example");
   },
-  // Gets the book with the given id
+  // Gets the Example with the given id
   getExample: function(id) {
     return axios.get("/api/example/" + id);
   },

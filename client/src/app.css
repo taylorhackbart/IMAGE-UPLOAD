@@ -1,3 +1,4 @@
+/* Important for footer to be displayed at the bottom of the page */
 .app-background{
   display: flex;
   flex-direction: column;

@@ -69,6 +69,7 @@ const Delete = ({ image, index, moveImage, removeItem}) => {
         ref={newRef}
       >
         {" "}
+        {/* Trash can Image from "react-icons" */}
         <BsTrash/>
         <Image
           sourceId={sourceId}

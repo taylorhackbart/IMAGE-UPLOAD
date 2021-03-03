@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 import logo from "./logo.png";
 import { Navbar } from "react-bootstrap";
-
+//Simple Nav Bar
 function NavBar() {
   return (
     <>

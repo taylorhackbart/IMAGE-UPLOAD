@@ -8,13 +8,12 @@ const PORT = process.env.PORT || 3001;
 require('dotenv').config()
 const bodyParser = require('body-parser');
 
+//Creating an upload size limit- very important to allow larger images to be uploaded through the browser
 app.use(bodyParser.urlencoded({ extended: false , limit: "100gb"}))
 app.use(bodyParser.json({limit: "100gb"}))
 
 app.use(cors());
 app.use(morgan("dev"))
-
-
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -33,7 +32,7 @@ const options = {
   useCreateIndex: true,
   useFindAndModify: false
 }
-// Connect to the Mongo DB
+// Connect to the Mongo DB through Atlas or Robo3T
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/photos", options, (err)  => { 
     if (err) throw err;

@@ -1,5 +1,5 @@
 import React from "react";
-
+//Allows users to know they are still on the site, but the html route they are looking for cannot be found
 function NoMatch() {
   return (
     <>

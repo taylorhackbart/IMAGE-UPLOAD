@@ -11,9 +11,8 @@ const Column = ({ list }) => {
         flexDirection: 'column'
       }}
     >
-      {/* {list.map((text, index) => ( */}
         <ImageList key={list} text={list} />
-      {/* ))} */}
+
     </div>
   )
 }
